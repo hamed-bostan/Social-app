@@ -25,9 +25,18 @@ const Navbar = () => {
             <a href="#">timeline</a>
           </div>
           <div className="navbar_icons">
-            <PersonIcon />
-            <MessageIcon />
-            <NotificationsIcon />
+            <div className="navbar_icon_item">
+              <PersonIcon />
+              <span className="navbar_icon_badge">1</span>
+            </div>
+            <div className="navbar_icon_item">
+              <MessageIcon />
+              <span className="navbar_icon_badge">2</span>
+            </div>
+            <div className="navbar_icon_item">
+              <NotificationsIcon />
+              <span className="navbar_icon_badge">1</span>
+            </div>
           </div>
           <div className="navbar_avatar_container">
             <img className="navbar_avatar" src={avatar} alt="avatar" />

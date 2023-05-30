@@ -28,7 +28,6 @@
 .navbar_center {
   display: flex;
   flex: 5;
-  width: 40%;
   background: white;
   align-items: center;
   border-radius: 20px;
@@ -63,7 +62,7 @@
 .navbar_link_container {
   display: flex;
   gap: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .navbar_link_container a {
@@ -76,7 +75,28 @@
 .navbar_icons {
   display: flex;
   cursor: pointer;
-  gap: 8px;
+  gap: 15px;
+  display: flex;
+  position: relative;
+}
+
+.navbar_icon_item {
+  position: relative;
+}
+
+.navbar_icon_badge {
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
 }
 
 .navbar_avatar {
