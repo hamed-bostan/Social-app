@@ -1,0 +1,107 @@
+.feed_container {
+  /* background: green; */
+  flex: 5.5;
+}
+
+.feed_wrapper {
+  width: 93%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 6px;
+  padding: 0.7em 0 2.4em 0;
+  box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.feed_top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+  margin-left: 0.6em;
+}
+
+.feed_top img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feed_top input {
+  border: none;
+  margin-left: 12px;
+  padding: 4px 0;
+}
+
+.feed_top input:focus {
+  outline: none;
+}
+
+/* end of top section */
+/* end of top section */
+
+.feed_line {
+  margin-bottom: 2rem;
+  width: 91%;
+  margin-left: 1.8em;
+}
+
+/* bottom section*/
+/* bottom section*/
+
+.feed_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0 1.55em;
+}
+
+.feed_icon_container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.feed_icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.feed_photo {
+  color: tomato;
+  cursor: pointer;
+}
+
+.feed_tag {
+  color: blue;
+  cursor: pointer;
+}
+
+.feed_location {
+  color: green;
+  cursor: pointer;
+}
+
+.feed_imoji {
+  color: goldenrod;
+  cursor: pointer;
+}
+
+.feed_icon span {
+  text-transform: capitalize;
+}
+
+.feed_button_container {
+  display: flex;
+}
+
+.feed_button {
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 5px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,90 @@
+.navbar_container {
+  background-color: #1877f2;
+  display: flex;
+}
+
+.navbar_wrapper {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  color: white;
+}
+
+.navbar_left {
+  display: flex;
+  flex: 3;
+  align-items: center;
+}
+
+.navbar_left h2 {
+  cursor: pointer;
+}
+
+/* center */
+/* center */
+
+.navbar_center {
+  display: flex;
+  flex: 5;
+  width: 40%;
+  background: white;
+  align-items: center;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.navbar_center .navbar_search_icon {
+  color: black;
+  margin-left: 10px;
+}
+
+.navbar_center input {
+  border: none;
+  width: 85%;
+}
+
+.navbar_center input:focus {
+  outline: none;
+}
+
+/* right */
+/* right */
+
+.navbar_right {
+  display: flex;
+  justify-content: space-between;
+  flex: 4;
+  align-items: center;
+  gap: 4px;
+}
+
+.navbar_link_container {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.navbar_link_container a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.navbar_icons {
+  display: flex;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.navbar_avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
