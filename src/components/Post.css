@@ -33,15 +33,15 @@
 /* center section */
 /* center section */
 
-.center_post .description {
-  margin-bottom: 1em;
+.description {
   text-transform: capitalize;
 }
 
 .center_post img {
+  margin-top: 1em;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 }
 
 /* bottom section */
@@ -52,17 +52,34 @@
   justify-content: space-between;
   margin-bottom: 2em;
   padding-bottom: 0.6em;
+  align-items: center;
 }
 
 .bottom_left {
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 
 .bottom_left img {
   width: 22px;
 }
 
-.bottom_right span {
+.name_post {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.post_date {
+  font-size: 12px;
+}
+
+.post_like_counter {
+  font-size: 15px;
+}
+
+.post_comment_text {
   text-transform: capitalize;
+  border-bottom: 1px dashed gray;
+  font-size: 15px;
 }

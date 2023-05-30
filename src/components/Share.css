@@ -70,18 +70,22 @@
 
 .share_photo {
   color: tomato;
+  cursor: pointer;
 }
 
 .share_tag {
   color: blue;
+  cursor: pointer;
 }
 
 .share_location {
   color: green;
+  cursor: pointer;
 }
 
 .share_imoji {
   color: goldenrod;
+  cursor: pointer;
 }
 
 .share_icon span {
@@ -99,4 +103,11 @@
   border-radius: 5px;
   padding: 8px 5px;
   text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.share_icon_text {
+  font-size: 14px;
+  font-weight: 500;
 }

@@ -1,6 +1,9 @@
 .navbar_container {
   background-color: #1877f2;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 4;
 }
 
 .navbar_wrapper {
@@ -18,8 +21,10 @@
   align-items: center;
 }
 
-.navbar_left h2 {
+.navbar_left span {
   cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* center */
@@ -35,7 +40,7 @@
 }
 
 .navbar_center .navbar_search_icon {
-  color: black;
+  color: rgb(71, 71, 71);
   margin-left: 10px;
 }
 
@@ -56,13 +61,15 @@
   justify-content: space-between;
   flex: 4;
   align-items: center;
-  gap: 4px;
+  gap: 10px;
 }
 
 .navbar_link_container {
   display: flex;
   gap: 10px;
   margin-left: 30px;
+  align-items: center;
+  font-size: 15px;
 }
 
 .navbar_link_container a {
@@ -78,6 +85,7 @@
   gap: 15px;
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .navbar_icon_item {
@@ -100,8 +108,8 @@
 }
 
 .navbar_avatar {
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;

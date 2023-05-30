@@ -3,7 +3,6 @@ import "./Navbar.css";
 import PersonIcon from "@mui/icons-material/Person";
 import MessageIcon from "@mui/icons-material/Message";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import avatar from "../images/01.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
     <div className="navbar_container">
       <div className="navbar_wrapper">
         <div className="navbar_left">
-          <h2>SocialLogo</h2>
+          <span>Sopranos</span>
         </div>
 
         <div className="navbar_center">
@@ -39,7 +38,11 @@ const Navbar = () => {
             </div>
           </div>
           <div className="navbar_avatar_container">
-            <img className="navbar_avatar" src={avatar} alt="avatar" />
+            <img
+              className="navbar_avatar"
+              src="./assets/person/1.jpeg"
+              alt="avatar"
+            />
           </div>
         </div>
       </div>

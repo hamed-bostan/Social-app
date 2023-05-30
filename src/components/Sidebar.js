@@ -8,16 +8,9 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import HelpIcon from "@mui/icons-material/Help";
 import WorkIcon from "@mui/icons-material/Work";
 import EventIcon from "@mui/icons-material/Event";
-import image01 from "../images/01.jpg";
-import image02 from "../images/02.jpg";
-import image03 from "../images/03.jpg";
-import image04 from "../images/04.jpg";
-import image05 from "../images/05.jpg";
-import image06 from "../images/06.jpg";
-import image07 from "../images/07.png";
-import image08 from "../images/08.jpg";
-import image09 from "../images/09.jpg";
-import image10 from "../images/10.jpg";
+
+import { Users } from "../data.js";
+import CloseFriend from "./CloseFriend";
 
 const Sidebar = () => {
   return (
@@ -63,45 +56,10 @@ const Sidebar = () => {
         <hr className="line" />
         {/* images */}
         {/* images */}
-        <div className="sidebar_image">
-          <img src={image01} alt="image" />
-          <span className="sidebar_info">eren</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image02} alt="image" />
-          <span className="sidebar_info">mikasa</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image03} alt="image" />
-          <span className="sidebar_info">anney</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image04} alt="image" />
-          <span className="sidebar_info">erwin</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image05} alt="image" />
-          <span className="sidebar_info">levi</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image06} alt="image" />
-          <span className="sidebar_info">john</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image07} alt="image" />
-          <span className="sidebar_info">erwin</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image08} alt="image" />
-          <span className="sidebar_info">levi</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image09} alt="image" />
-          <span className="sidebar_info">conney</span>
-        </div>
-        <div className="sidebar_image">
-          <img src={image10} alt="image" />
-          <span className="sidebar_info">attck</span>
+        <div className="sidebar_image_container">
+          {Users.map((item) => {
+            return <CloseFriend key={item.id} data={item} />;
+          })}
         </div>
       </div>
     </div>
